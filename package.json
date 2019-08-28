@@ -1,0 +1,32 @@
+{
+  "name": "brionnaanderson",
+  "version": "1.0.0",
+  "description": "Practice Project",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-prettier": "^1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brionna92/Brionna2-Anderson.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "spa"
+  ],
+  "author": "Brionna Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brionna92/Brionna2-Anderson/issues"
+  },
+  "homepage": "https://github.com/brionna92/Brionna2-Anderson#readme"
+}
