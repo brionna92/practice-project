@@ -18,6 +18,8 @@
     "editor.fontLigatures": true,
     "better-comments.highlightPlainText": true,
     "eslint.autoFixOnSave": true,
+    "git.ignoreLimitWarning": true,
+    "stylelint.enable": true,
+    "css.validate": false,
     "files.eol": "\n",
-    "git.ignoreLimitWarning": true
   }

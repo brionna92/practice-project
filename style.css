@@ -2,7 +2,8 @@
   background:hsl(346, 78%, 9%);
 }
 header { background: blue;}
-body{font-family: 'Merriweather', serif;}
+body{font-family: 'Merriweather', serif;
+font-size: 16px}
 /*:root   ---root selector is basically same as html in this context.*/
 :root{
 --primary:#808080;
