@@ -3,3 +3,12 @@
 }
 header { background: blue;}
 body{font-family: 'Merriweather', serif;}
+/*:root   ---root selector is basically same as html in this context.*/
+:root{
+--primary:#808080;
+--primary-variant:#4B0082;
+--secondary:#1E90FF;
+--secondary-variant:
+--base-spacing:8px;
+
+}
