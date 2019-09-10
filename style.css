@@ -53,4 +53,23 @@ h2{
 img{
 
 border-radius:50%;
+}
 /*box-shadow: "Figure Out how to use this shit"*/
+
+h1{
+  text-align:center;
+}
+
+nav ul{list-style-type: none;
+text-align: center;
+padding:0;
+}
+nav li{
+  padding:var(--base-spacing) 0;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+
