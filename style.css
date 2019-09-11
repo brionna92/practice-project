@@ -32,6 +32,7 @@ header,
   nav{
 border-top: var(--border-secondary);
 border-bottom: var(--border-secondary);
+min-height: 72px;
 
   }
 
@@ -44,6 +45,13 @@ footer{
 }
 nav .fas{
   margin:var(--base-spacing);
+  position: absolute;
+  transform: translateX(calc(100vw - var(--base-spacing) * 10));
+}
+nav .is-hidden{
+  font-size:0;
+ height: 0;
+ opacity: 0;
 }
 
 /*Layout*/
