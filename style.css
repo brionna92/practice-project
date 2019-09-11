@@ -38,8 +38,19 @@ min-height: 72px;
 
 footer{
   border-top:var(--border-primary);
+  padding:calc(var(--base-spacing)*2);
+
 }
 
+footer a{
+  color:white;
+}
+
+footer ul{
+  display:flex;
+  justify-content: space-between;
+  padding:0px;
+}
 
 
 
@@ -64,7 +75,13 @@ h1{
   text-align:center;
 }
 
-nav ul{list-style-type: none;
+
+ul{
+  list-style-type: none;
+}
+
+
+nav ul{
 text-align: center;
 padding:0;
 }
@@ -78,10 +95,18 @@ nav a,
 
 }
 
-.hero a{
+.section{
+padding:calc(var(--base-spacing)*3);
+}
+
+.hero a,
+.read-more-btn{
   background-color:var(--secondary);
   border-radius: var(--base-spacing);
-  padding:var(--base-spacing);
+  padding:var(--base-spacing)16px;
+  display:inline-block;
+  margin:5px
+
 }
 
 
@@ -112,4 +137,7 @@ nav .is-hidden{
   align-items: center;
   height:20vh;
   max-height: 420px;
+}
+.read-more-btn{
+  background: plum;
 }
