@@ -1,9 +1,4 @@
-.test-class{
-  background:hsl(346, 78%, 9%);
-}
-header { background: blue;}
-body{font-family: 'Merriweather', serif;
-font-size: 16px}
+
 /*:root   ---root selector is basically same as html in this context.*/
 :root{
 --primary:#808080;
@@ -13,7 +8,7 @@ font-size: 16px}
 
 }
 body{
-
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
@@ -140,4 +135,11 @@ nav .is-hidden{
 }
 .read-more-btn{
   background: plum;
+  align-self: center;
+  max-width: fit-content;
+}
+
+@media screen and (min-width:768px){
+header{ background-color: deeppink;
+}
 }
