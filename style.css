@@ -138,6 +138,35 @@ nav .is-hidden{
   height:20vh;
   max-height: 420px;
 }
+
+
+/*Form for mobile*/
+
+form
+form div{
+  display:flex;
+ flex-direction: column;
+}
+form{
+ padding:var(--base-spacing);
+}
+
+input,
+textarea{
+  border: solid thin black;
+  max-width: 80vw;
+}
+ form div{
+   margin: var(--bases-pacing);
+ }
+input[type="submit"]{
+  background:var(--secondary);
+  border-radius: var(--base-spacing);
+  display:inline-block;
+  margin: var(--base-spacing)0;
+  min-height: var(--base-spacing)*6;
+}
+
 /*This should apply for tablets and everything above*/
 @media screen and (min-width:768px){
   section{
@@ -164,13 +193,21 @@ nav .is-hidden{
 header{ flex-direction: row;
   padding:calc(var(--base-spacing)*2);
 }
-
+.hero{
+  height: 60vh;
+}
+.section p{
+  margin-bottom: auto;
+}
 header figure{
   margin-right:calc(var(--base-spacing)*2);
 }
 nav ul{
   display:flex;
   justify-content:space-around;
+}
+.flex-container--desktop{
+  display:flex;
 }
 nav .is-hidden--desktop{
   font-size: 0;
