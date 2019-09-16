@@ -63,6 +63,7 @@ h2{
 img{
 
 border-radius:50%;
+box-shadow: cal(var(--base-spacing)*2)
 }
 /*box-shadow: "Figure Out how to use this shit"*/
 
@@ -121,6 +122,10 @@ nav .is-hidden{
  height: 0;
  opacity: 0;
 }
+.is-hidden--mobile{
+  font-size: 0;
+  height:0;
+}
 
 .hero{
   background:url(https://picsum.photos/680/420)center center no-repeat;
@@ -133,12 +138,28 @@ nav .is-hidden{
   height:20vh;
   max-height: 420px;
 }
+/*This should apply for tablets and everything above*/
+@media screen and (min-width:768px){
+  section{
+    display:flex;
+  flex-direction: column;
+
+
+  }
 .read-more-btn{
   background: plum;
   align-self: center;
   max-width: fit-content;
 }
+.is-hidden--tablet{
+  font-size: 0;
+  height: 0;
+}
 
+}
+
+
+/*This is for a desktop*/
 @media screen and (min-width:1024px){
 header{ flex-direction: row;
   padding:calc(var(--base-spacing)*2);
@@ -147,4 +168,15 @@ header{ flex-direction: row;
 header figure{
   margin-right:calc(var(--base-spacing)*2);
 }
+nav ul{
+  display:flex;
+  justify-content:space-around;
+}
+nav .is-hidden--desktop{
+  font-size: 0;
+  height:0;}
+
+  .is-shown--desktop{
+    font-size:initial;
+  }
 }
