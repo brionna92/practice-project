@@ -1,219 +1,211 @@
-
-/*:root   ---root selector is basically same as html in this context.*/
-:root{
---primary:#808080;
---primary-variant:#4B0082;
---secondary:#1E90FF;
---base-spacing:8px;
-
-}
-body{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+/* :root   ---root selector is basically same as html in this context.*/
+:root {
+  --primary: #808080;
+  --primary-variant: #4b0082;
+  --secondary: #1e90ff;
+  --base-spacing: 8px;
 }
 
-h1{
-margin: calc(var(--base-spacing)*9)
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
+h1 {
+  margin: calc(var(--base-spacing) * 9);
+  text-align: center;
 }
 
 header,
-  section:nth-of-type(odd),
-  footer{
-    background:var(--primary);
-    color: var(--primary-text);
-  }
-
-  nav{
-border-top: var(--border-secondary);
-border-bottom: var(--border-secondary);
-min-height: 72px;
-
-  }
-
-footer{
-  border-top:var(--border-primary);
-  padding:calc(var(--base-spacing)*2);
-
+section:nth-of-type(odd),
+footer {
+  background: var(--primary);
+  color: var(--primary-text);
 }
 
-footer a{
-  color:white;
+nav {
+  border-top: var(--border-secondary);
+  border-bottom: var(--border-secondary);
+  min-height: 72px;
 }
 
-footer ul{
-  display:flex;
-  justify-content: space-between;
-  padding:0px;
-}
-
-
-
-/*Layout*/
-header{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-text-align: center;
-}
-figure,
-h2{
-  margin:0;
-}
-img{
-
-border-radius:50%;
-box-shadow: cal(var(--base-spacing)*2)
-}
-/*box-shadow: "Figure Out how to use this shit"*/
-
-h1{
-  text-align:center;
-}
-
-
-ul{
+ul {
   list-style-type: none;
 }
 
-
-nav ul{
-text-align: center;
-padding:0;
+footer {
+  border-top: var(--border-primary);
+  padding: calc(var(--base-spacing) * 2);
 }
-nav li{
-  padding:var(--base-spacing) 0;
+
+footer a {
+  color: white;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+/* Layout */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+figure,
+h2 {
+  margin: 0;
+}
+img {
+  border-radius: 50%;
+  box-shadow: cal(var(--base-spacing) * 2);
+}
+/* box-shadow: "Figure Out how to use this shit" */
+
+nav ul {
+  text-align: center;
+  padding: 0;
+}
+nav li {
+  padding: var(--base-spacing) 0;
 }
 
 nav a,
-.hero a{
+.hero a {
   text-decoration: none;
-
 }
 
-.section{
-padding:calc(var(--base-spacing)*3);
+.section {
+  padding: calc(var(--base-spacing) * 3);
 }
 
 .hero a,
-.read-more-btn{
-  background-color:var(--secondary);
+.read-more-btn {
+  background-color: var(--secondary);
   border-radius: var(--base-spacing);
-  padding:var(--base-spacing)16px;
-  display:inline-block;
-  margin:5px
-
+  padding: var(--base-spacing) 16px;
+  display: inline-block;
+  margin: 5px;
 }
 
-
-.fas{
-  font-size:48px;
+.fas {
+  font-size: 48px;
 }
 
-nav .fas{
-  margin:var(--base-spacing);
+nav .fas {
+  margin: var(--base-spacing);
   position: absolute;
   transform: translateX(calc(100vw - var(--base-spacing) * 10));
 }
 
-
-nav .is-hidden{
-  font-size:0;
- height: 0;
- opacity: 0;
-}
-.is-hidden--mobile{
+nav .is-hidden {
   font-size: 0;
-  height:0;
+  height: 0;
+  opacity: 0;
 }
-
-.hero{
-  background:url(https://picsum.photos/680/420)center center no-repeat;
-  background-size:contain;
-  /*background-repeat: no-repeat;*/
-  background-size:cover;
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  height:20vh;
-  max-height: 420px;
-}
-
-
-/*Form for mobile*/
-
-form
-form div{
-  display:flex;
- flex-direction: column;
-}
-form{
- padding:var(--base-spacing);
-}
-
-input,
-textarea{
-  border: solid thin black;
-  max-width: 80vw;
-}
- form div{
-   margin: var(--bases-pacing);
- }
-input[type="submit"]{
-  background:var(--secondary);
-  border-radius: var(--base-spacing);
-  display:inline-block;
-  margin: var(--base-spacing)0;
-  min-height: var(--base-spacing)*6;
-}
-
-/*This should apply for tablets and everything above*/
-@media screen and (min-width:768px){
-  section{
-    display:flex;
-  flex-direction: column;
-
-
-  }
-.read-more-btn{
-  background: plum;
-  align-self: center;
-  max-width: fit-content;
-}
-.is-hidden--tablet{
+.is-hidden--mobile {
   font-size: 0;
   height: 0;
 }
 
+.hero {
+  background: url(https://picsum.photos/680/420) center center no-repeat;
+  background-size: contain;
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  max-height: 420px;
 }
 
+/*Form for mobile*/
+
+form div {
+  margin: var(--bases-pacing);
+}
+
+form form div {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  padding: var(--base-spacing);
+}
+
+input,
+textarea {
+  border: solid thin black;
+  max-width: 80vw;
+}
+
+input[type="submit"] {
+  background: var(--secondary);
+  border-radius: var(--base-spacing);
+  display: inline-block;
+  margin: var(--base-spacing) 0;
+  min-height: var(--base-spacing) * 6;
+}
+
+/*This should apply for tablets and everything above*/
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .read-more-btn {
+    background: plum;
+    align-self: center;
+    max-width: fit-content;
+  }
+  .is-hidden--tablet {
+    font-size: 0;
+    height: 0;
+  }
+}
 
 /*This is for a desktop*/
-@media screen and (min-width:1024px){
-header{ flex-direction: row;
-  padding:calc(var(--base-spacing)*2);
-}
-.hero{
-  height: 60vh;
-}
-.section p{
-  margin-bottom: auto;
-}
-header figure{
-  margin-right:calc(var(--base-spacing)*2);
-}
-nav ul{
-  display:flex;
-  justify-content:space-around;
-}
-.flex-container--desktop{
-  display:flex;
-}
-nav .is-hidden--desktop{
-  font-size: 0;
-  height:0;}
+@media screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    padding: calc(var(--base-spacing) * 2);
+  }
 
-  .is-shown--desktop{
-    font-size:initial;
+  .hero {
+    height: 60vh;
+  }
+
+  .section p {
+    margin-bottom: auto;
+  }
+
+  header figure {
+    margin-right: calc(var(--base-spacing) * 2);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .flex-container--desktop {
+    display: flex;
+    background: hotpink;
+  }
+
+  .flex-row--desktop {
+    flex-direction: row;
+  }
+
+  nav .is-hidden--desktop {
+    font-size: 0;
+    height: 0;
+  }
+
+  .is-shown--desktop {
+    font-size: initial;
   }
 }
