@@ -1,20 +1,7 @@
-function greeter(question = "What is you name?"){
-let answer = prompt(question);
+// select fa-hamburger
+// Listen for a click on the hamburger
+// remove mobile hidden class from the ul
 
-if (answer === ""){
- return greeter();  //recursion
-}
-
-
-return answer;
-}
-
-//const getter = document.querySelector("h1").textContent;
-//document.querySelector("#root").innerHTML = "<p>Hello World</p>";
-//document.querySelector("#root").textContent = "<p>Hello World</p>";
-
-document.querySelector("#root").innerHTML = `<p>${greeter()}</p>`;
-
-
-//const answer = greeter();
-document.querySelector("h1").textContent;
+const hamburger = document.querySelector("fa-hamburger");
+const hiddenUL = document.querySelector("ul");
+console.log(hamburger, hiddenUL);
