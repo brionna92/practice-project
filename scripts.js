@@ -1,9 +1,16 @@
-function greeter (question = "What is you name?"){
-return prompt (question);
+function greeter(question = "What is you name?"){
+let answer = prompt(question);
+
+if (answer === ""){
+ return greeter();  //recursion
 }
 
-const answer = greeter();
-document.querySelector("").textContent = answer
 
-const h1TextContent = document.querySelector("h1")textContent;
-console.log(h1TextContent);
+return answer;
+}
+
+const getter = document.querySelector("h1").textContent;
+
+//const answer = greeter();
+
+//document.querySelector("h1").textContent = greeter();
