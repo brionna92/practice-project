@@ -9,8 +9,12 @@ if (answer === ""){
 return answer;
 }
 
-const getter = document.querySelector("h1").textContent;
+//const getter = document.querySelector("h1").textContent;
+//document.querySelector("#root").innerHTML = "<p>Hello World</p>";
+//document.querySelector("#root").textContent = "<p>Hello World</p>";
+
+document.querySelector("#root").innerHTML = `<p>${greeter()}</p>`;
+
 
 //const answer = greeter();
-
-//document.querySelector("h1").textContent = greeter();
+document.querySelector("h1").textContent;
