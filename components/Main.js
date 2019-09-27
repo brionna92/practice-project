@@ -1,4 +1,5 @@
-export default `<main>
+export default function(){
+  return`<main>
 <form action="#" method=POST data-netlify="true">
   <div class="flex-container--desktop flex-row--desktop">
   <div>
@@ -40,3 +41,4 @@ export default `<main>
 
 
 </main>`
+}

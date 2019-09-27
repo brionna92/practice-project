@@ -1,4 +1,5 @@
-export default`<header>
+export default function(heading= "Welcome Baby "){
+  return `<header>
       <figure>
         <img
           srcset="
@@ -13,6 +14,7 @@ export default`<header>
 
 
       </figure>
-      <h1>
+      <h1>${heading}</h1>
         Practice Project</h1>
     </header>`;
+}

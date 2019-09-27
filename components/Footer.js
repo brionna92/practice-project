@@ -1,4 +1,5 @@
-export default `<footer>
+export default function(){
+  return `<footer>
 <ul>
     <li><a href="./index.html">Home</a></li>
 <li><a href="./about/index.html">About</a></li>
@@ -11,3 +12,4 @@ export default `<footer>
 
 </p>
 </footer>`
+}

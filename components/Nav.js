@@ -1,4 +1,5 @@
-export default `<nav>
+export default function(){
+  return `<nav>
 <span class="fas fa-hamburger is-hidden--desktop"></span>
 
 
@@ -11,3 +12,4 @@ export default `<nav>
 </ul>
 <!-- We Usually only have one <na> to represent -->
 </nav>`
+}
