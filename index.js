@@ -28,3 +28,12 @@ ${Nav()}
 ${Main()}
 ${Footer()}
 `
+
+const aboutLink = document.querySelector('#about');
+
+aboutLink.addEventListener('click', function (event){
+event.preventDefault();
+console.log(state[event.target. textContent]);
+
+  console.log('you clicked me')
+})
