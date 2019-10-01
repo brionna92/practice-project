@@ -1,4 +1,4 @@
-export default function(){
+export default function(year = 2019){
   return `<footer>
 <ul>
     <li><a href="./index.html">Home</a></li>
@@ -8,8 +8,9 @@ export default function(){
 <li><a href="./blog/index.html">Blog</a></li>
 
 </ul>
-<p>&copy; 2019 Brionna Anderson &bullet; All rights reserved
+<p>&copy; ${year} 2019 Brionna Anderson &bullet; All rights reserved
 
 </p>
+
 </footer>`
 }
