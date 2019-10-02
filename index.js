@@ -35,11 +35,23 @@ ${Footer()}
 
 render()
 
-const aboutLink = document.querySelector('#about');
+const link = document.querySelectorAll('nav a');
+console.log(Array.isArray(links));
 
-aboutLink.addEventListener('click', function (event){
-event.preventDefault();
-render(state[event.target. textContent]);
+console.log(links[3]);
+for(let i = 0; i<links.length; i+=1){
+  aboutLink.addEventListener('click', function (event){
+    event.preventDefault();
+ console.log(event.target.textContent);
+
+  //console.log(links[i].textContent);
+  }
+
+
+
+//aboutLink.addEventListener('click', function (event){
+//event.preventDefault();
+//render(state[event.target. textContent]);
 
 
 })
